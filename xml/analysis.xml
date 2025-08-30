@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='utf-8'?>
+<applicationAnalysis>
+    <programOutput />
+    <jitLog>
+        <method name="java.lang.Object::&lt;init&gt;" compilations="3" totalTime="3ms">
+            <compilation id="33" level="3" bytes="1" />
+            <compilation id="39" level="4" bytes="1" />
+            <compilation id="39" level="3" bytes="1" />
+        </method>
+        <method name="java.lang.String::hashCode" compilations="3" totalTime="180ms">
+            <compilation id="34" level="3" bytes="60" />
+            <compilation id="66" level="4" bytes="60" />
+            <compilation id="66" level="3" bytes="60" />
+        </method>
+        <method name="jdk.internal.util.ArraysSupport::signedHashCode" compilations="3"
+            totalTime="111ms">
+            <compilation id="34" level="3" bytes="37" />
+            <compilation id="42" level="4" bytes="37" />
+            <compilation id="45" level="3" bytes="37" />
+        </method>
+        <method name="java.lang.String::isLatin1" compilations="3" totalTime="57ms">
+            <compilation id="34" level="3" bytes="19" />
+            <compilation id="69" level="4" bytes="19" />
+            <compilation id="69" level="3" bytes="19" />
+        </method>
+        <method name="java.util.ImmutableCollections$SetN::probe" compilations="1" totalTime="56ms">
+            <compilation id="34" level="3" bytes="56" />
+        </method>
+        <method name="java.lang.Math::floorMod" compilations="1" totalTime="20ms">
+            <compilation id="35" level="3" bytes="20" />
+        </method>
+        <method name="jdk.internal.util.ArraysSupport::vectorizedHashCode" compilations="1"
+            totalTime="158ms">
+            <compilation id="35" level="3" bytes="158" />
+        </method>
+        <method name="java.lang.StringLatin1::equals" compilations="1" totalTime="36ms">
+            <compilation id="36" level="3" bytes="36" />
+        </method>
+        <method name="java.lang.StringLatin1::hashCode" compilations="1" totalTime="52ms">
+            <compilation id="36" level="3" bytes="52" />
+        </method>
+        <method name="java.lang.String::equals" compilations="1" totalTime="56ms">
+            <compilation id="36" level="3" bytes="56" />
+        </method>
+        <method name="java.util.Set::of" compilations="1" totalTime="4ms">
+            <compilation id="37" level="3" bytes="4" />
+        </method>
+        <method name="java.lang.module.ModuleDescriptor::modsHashCode" compilations="1"
+            totalTime="43ms">
+            <compilation id="37" level="3" bytes="43" />
+        </method>
+        <method name="java.util.Objects::requireNonNull" compilations="1" totalTime="14ms">
+            <compilation id="37" level="3" bytes="14" />
+        </method>
+        <method name="java.util.AbstractCollection::&lt;init&gt;" compilations="1" totalTime="5ms">
+            <compilation id="37" level="3" bytes="5" />
+        </method>
+        <method name="java.util.ImmutableCollections$AbstractImmutableCollection::&lt;init&gt;"
+            compilations="1" totalTime="5ms">
+            <compilation id="37" level="3" bytes="5" />
+        </method>
+        <method name="java.lang.String::coder" compilations="1" totalTime="15ms">
+            <compilation id="37" level="3" bytes="15" />
+        </method>
+        <method name="java.lang.String::length" compilations="1" totalTime="11ms">
+            <compilation id="38" level="3" bytes="11" />
+        </method>
+        <method name="java.lang.String::charAt" compilations="3" totalTime="75ms">
+            <compilation id="38" level="3" bytes="25" />
+            <compilation id="72" level="4" bytes="25" />
+            <compilation id="72" level="3" bytes="25" />
+        </method>
+        <method name="java.lang.module.ModuleDescriptor::name" compilations="1" totalTime="5ms">
+            <compilation id="38" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.module.ModuleReference::descriptor" compilations="1" totalTime="5ms">
+            <compilation id="38" level="1" bytes="5" />
+        </method>
+        <method name="java.util.Objects::equals" compilations="1" totalTime="23ms">
+            <compilation id="38" level="3" bytes="23" />
+        </method>
+        <method name="java.util.ImmutableCollections$SetN$SetNIterator::hasNext" compilations="1"
+            totalTime="13ms">
+            <compilation id="40" level="3" bytes="13" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap::tabAt" compilations="1"
+            totalTime="22ms">
+            <compilation id="40" level="3" bytes="22" />
+        </method>
+        <method name="java.util.ImmutableCollections$SetN$SetNIterator::next" compilations="1"
+            totalTime="90ms">
+            <compilation id="40" level="3" bytes="90" />
+        </method>
+        <method name="jdk.internal.misc.Unsafe::getReferenceAcquire" compilations="1"
+            totalTime="7ms">
+            <compilation id="40" level="3" bytes="7" />
+        </method>
+        <method name="java.util.KeyValueHolder::getKey" compilations="1" totalTime="5ms">
+            <compilation id="41" level="1" bytes="5" />
+        </method>
+        <method name="java.util.ImmutableCollections$AbstractImmutableSet::&lt;init&gt;"
+            compilations="1" totalTime="5ms">
+            <compilation id="41" level="3" bytes="5" />
+        </method>
+        <method name="java.util.ImmutableCollections$MapN::probe" compilations="1" totalTime="60ms">
+            <compilation id="41" level="3" bytes="60" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap::putVal" compilations="1"
+            totalTime="432ms">
+            <compilation id="41" level="3" bytes="432" special="!" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap::spread" compilations="1"
+            totalTime="10ms">
+            <compilation id="43" level="3" bytes="10" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap$Node::&lt;init&gt;" compilations="1"
+            totalTime="20ms">
+            <compilation id="43" level="3" bytes="20" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap::addCount" compilations="1"
+            totalTime="280ms">
+            <compilation id="43" level="3" bytes="280" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap::putIfAbsent" compilations="1"
+            totalTime="8ms">
+            <compilation id="44" level="3" bytes="8" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap::casTabAt" compilations="1"
+            totalTime="21ms">
+            <compilation id="44" level="3" bytes="21" />
+        </method>
+        <method name="java.util.KeyValueHolder::getValue" compilations="1" totalTime="5ms">
+            <compilation id="44" level="1" bytes="5" />
+        </method>
+        <method name="java.util.HashMap::putVal" compilations="1" totalTime="300ms">
+            <compilation id="45" level="3" bytes="300" />
+        </method>
+        <method name="java.util.HashMap::hash" compilations="1" totalTime="20ms">
+            <compilation id="46" level="3" bytes="20" />
+        </method>
+        <method name="java.util.HashMap::newNode" compilations="1" totalTime="13ms">
+            <compilation id="46" level="3" bytes="13" />
+        </method>
+        <method name="java.util.HashMap::getNode" compilations="1" totalTime="150ms">
+            <compilation id="46" level="3" bytes="150" />
+        </method>
+        <method name="java.util.HashMap$Node::&lt;init&gt;" compilations="1" totalTime="26ms">
+            <compilation id="46" level="3" bytes="26" />
+        </method>
+        <method name="java.util.HashMap::afterNodeInsertion" compilations="1" totalTime="1ms">
+            <compilation id="47" level="3" bytes="1" />
+        </method>
+        <method name="java.util.HashMap::put" compilations="1" totalTime="13ms">
+            <compilation id="47" level="3" bytes="13" />
+        </method>
+        <method name="java.util.HashMap::get" compilations="1" totalTime="19ms">
+            <compilation id="47" level="3" bytes="19" />
+        </method>
+        <method name="java.lang.module.ResolvedModule::reference" compilations="1" totalTime="5ms">
+            <compilation id="47" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.module.ModuleDescriptor$Exports::source" compilations="1"
+            totalTime="5ms">
+            <compilation id="47" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.module.ModuleDescriptor::isAutomatic" compilations="1"
+            totalTime="5ms">
+            <compilation id="47" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.module.ResolvedModule::configuration" compilations="1"
+            totalTime="5ms">
+            <compilation id="47" level="1" bytes="5" />
+        </method>
+        <method name="java.util.ImmutableCollections$Set12::isEmpty" compilations="1"
+            totalTime="2ms">
+            <compilation id="47" level="1" bytes="2" />
+        </method>
+        <method name="java.lang.module.ModuleDescriptor$Exports::targets" compilations="1"
+            totalTime="5ms">
+            <compilation id="47" level="1" bytes="5" />
+        </method>
+        <method name="java.util.ImmutableCollections$SetN::iterator" compilations="1"
+            totalTime="9ms">
+            <compilation id="48" level="3" bytes="9" />
+        </method>
+        <method name="java.util.ImmutableCollections$SetN$SetNIterator::&lt;init&gt;"
+            compilations="1" totalTime="36ms">
+            <compilation id="48" level="3" bytes="36" />
+        </method>
+        <method name="java.lang.AbstractStringBuilder::ensureCapacityInternal" compilations="1"
+            totalTime="39ms">
+            <compilation id="48" level="3" bytes="39" />
+        </method>
+        <method name="java.lang.String::isEmpty" compilations="1" totalTime="14ms">
+            <compilation id="48" level="3" bytes="14" />
+        </method>
+        <method name="java.lang.Enum::ordinal" compilations="1" totalTime="5ms">
+            <compilation id="54" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.module.ModuleDescriptor::isOpen" compilations="1" totalTime="5ms">
+            <compilation id="56" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.invoke.MethodType::returnType" compilations="1" totalTime="5ms">
+            <compilation id="56" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.StringLatin1::canEncode" compilations="1" totalTime="13ms">
+            <compilation id="56" level="3" bytes="13" />
+        </method>
+        <method name="java.lang.Math::min" compilations="1" totalTime="11ms">
+            <compilation id="56" level="3" bytes="11" />
+        </method>
+        <method name="java.lang.AbstractStringBuilder::isLatin1" compilations="1" totalTime="19ms">
+            <compilation id="58" level="3" bytes="19" />
+        </method>
+        <method name="java.lang.invoke.MethodTypeForm::canonicalize" compilations="1"
+            totalTime="74ms">
+            <compilation id="59" level="3" bytes="74" />
+        </method>
+        <method name="java.lang.invoke.MemberName::getDeclaringClass" compilations="1"
+            totalTime="5ms">
+            <compilation id="61" level="1" bytes="5" />
+        </method>
+        <method name="java.util.concurrent.ConcurrentHashMap::get" compilations="1"
+            totalTime="162ms">
+            <compilation id="61" level="3" bytes="162" />
+        </method>
+        <method name="java.lang.invoke.MethodType::checkSlotCount" compilations="1" totalTime="33ms">
+            <compilation id="61" level="3" bytes="33" />
+        </method>
+        <method name="java.lang.String::getBytes" compilations="1" totalTime="44ms">
+            <compilation id="61" level="3" bytes="44" />
+        </method>
+        <method name="java.lang.AbstractStringBuilder::length" compilations="1" totalTime="5ms">
+            <compilation id="62" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.AbstractStringBuilder::getValue" compilations="1" totalTime="5ms">
+            <compilation id="62" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.AbstractStringBuilder::putStringAt" compilations="1"
+            totalTime="19ms">
+            <compilation id="66" level="3" bytes="19" />
+        </method>
+        <method name="java.lang.AbstractStringBuilder::inflateIfNeededFor" compilations="1"
+            totalTime="22ms">
+            <compilation id="66" level="3" bytes="22" />
+        </method>
+        <method name="java.lang.Class::getClassLoader" compilations="1" totalTime="28ms">
+            <compilation id="66" level="3" bytes="28" />
+        </method>
+        <method name="java.lang.invoke.MethodType::form" compilations="1" totalTime="5ms">
+            <compilation id="66" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.StringLatin1::indexOfChar" compilations="1" totalTime="33ms">
+            <compilation id="67" level="3" bytes="33" />
+        </method>
+        <method name="java.lang.Math::max" compilations="1" totalTime="11ms">
+            <compilation id="67" level="3" bytes="11" />
+        </method>
+        <method name="java.lang.String::indexOf" compilations="1" totalTime="37ms">
+            <compilation id="67" level="3" bytes="37" />
+        </method>
+        <method name="java.lang.StringLatin1::indexOf" compilations="1" totalTime="37ms">
+            <compilation id="67" level="3" bytes="37" />
+        </method>
+        <method name="java.lang.invoke.MethodType::hashCode" compilations="1" totalTime="53ms">
+            <compilation id="68" level="3" bytes="53" />
+        </method>
+        <method name="java.util.Arrays::copyOfRange" compilations="1" totalTime="25ms">
+            <compilation id="68" level="3" bytes="25" />
+        </method>
+        <method name="jdk.internal.util.Preconditions::checkIndex" compilations="1" totalTime="18ms">
+            <compilation id="69" level="3" bytes="18" />
+        </method>
+        <method name="jdk.internal.org.objectweb.asm.SymbolTable::get" compilations="1"
+            totalTime="13ms">
+            <compilation id="69" level="3" bytes="13" />
+        </method>
+        <method name="java.lang.invoke.MethodType::ptypes" compilations="1" totalTime="5ms">
+            <compilation id="69" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.StringBuilder::append" compilations="1" totalTime="8ms">
+            <compilation id="70" level="3" bytes="8" />
+        </method>
+        <method name="java.lang.AbstractStringBuilder::append" compilations="1" totalTime="77ms">
+            <compilation id="70" level="3" bytes="77" />
+        </method>
+        <method name="java.util.ImmutableCollections$Set12$1::hasNext" compilations="1"
+            totalTime="13ms">
+            <compilation id="71" level="3" bytes="13" />
+        </method>
+        <method name="java.lang.Module::getDescriptor" compilations="1" totalTime="5ms">
+            <compilation id="71" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.module.ModuleDescriptor::provides" compilations="1" totalTime="5ms">
+            <compilation id="71" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.ref.Reference::reachabilityFence" compilations="3" totalTime="3ms">
+            <compilation id="71" level="3" bytes="1" />
+            <compilation id="73" level="4" bytes="1" />
+            <compilation id="73" level="3" bytes="1" />
+        </method>
+        <method name="jdk.internal.module.ModuleReferenceImpl::hashCode" compilations="1"
+            totalTime="56ms">
+            <compilation id="72" level="3" bytes="56" />
+        </method>
+        <method name="java.nio.DirectByteBuffer::get" compilations="1" totalTime="34ms">
+            <compilation id="72" level="3" bytes="34" special="!" />
+        </method>
+        <method name="java.nio.Buffer::session" compilations="1" totalTime="20ms">
+            <compilation id="72" level="3" bytes="20" />
+        </method>
+        <method name="java.nio.Buffer::checkIndex" compilations="1" totalTime="12ms">
+            <compilation id="73" level="3" bytes="12" />
+        </method>
+        <method name="java.nio.DirectByteBuffer::ix" compilations="1" totalTime="10ms">
+            <compilation id="73" level="3" bytes="10" />
+        </method>
+        <method name="java.lang.String::checkIndex" compilations="1" totalTime="10ms">
+            <compilation id="73" level="4" bytes="10" />
+        </method>
+        <method name="jdk.internal.misc.ScopedMemoryAccess::getByte" compilations="1"
+            totalTime="16ms">
+            <compilation id="73" level="3" bytes="16" special="!" />
+        </method>
+        <method name="jdk.internal.misc.ScopedMemoryAccess::getByteInternal" compilations="1"
+            totalTime="34ms">
+            <compilation id="73" level="3" bytes="34" special="!" />
+        </method>
+        <method name="java.nio.Buffer::limit" compilations="1" totalTime="5ms">
+            <compilation id="73" level="1" bytes="5" />
+        </method>
+        <method name="java.lang.Enum::&lt;init&gt;" compilations="1" totalTime="15ms">
+            <compilation id="74" level="3" bytes="15" />
+        </method>
+    </jitLog>
+    <errors>
+        <error type="Caused by" message="java.lang.ClassNotFoundException: Test01">
+            <stacktrace />
+        </error>
+    </errors>
+    <garbageCollection>
+        <event timestamp="0"
+            detail="[2025-08-30T19:40:45.452-0300][0.009s][info][gc,init] CardTable entry size: 512" />
+        <event timestamp="1" detail="[2025-08-30T19:40:45.453-0300][0.009s][info][gc     ] Using G1" />
+        <event timestamp="2"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] Version: 21.0.8+12-LTS-250 (release)" />
+        <event timestamp="3"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] CPUs: 8 total, 8 available" />
+        <event timestamp="4"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] Memory: 8025M" />
+        <event timestamp="5"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] Large Page Support: Disabled" />
+        <event timestamp="6"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] NUMA Support: Disabled" />
+        <event timestamp="7"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] Compressed Oops: Enabled (32-bit)" />
+        <event timestamp="8"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] Heap Region Size: 1M" />
+        <event timestamp="9"
+            detail="[2025-08-30T19:40:45.455-0300][0.011s][info][gc,init] Heap Min Capacity: 8M" />
+        <event timestamp="10"
+            detail="[2025-08-30T19:40:45.456-0300][0.012s][info][gc,init] Heap Initial Capacity: 126M" />
+        <event timestamp="11"
+            detail="[2025-08-30T19:40:45.456-0300][0.012s][info][gc,init] Heap Max Capacity: 2008M" />
+        <event timestamp="12"
+            detail="[2025-08-30T19:40:45.456-0300][0.012s][info][gc,init] Pre-touch: Disabled" />
+        <event timestamp="13"
+            detail="[2025-08-30T19:40:45.456-0300][0.012s][info][gc,init] Parallel Workers: 8" />
+        <event timestamp="14"
+            detail="[2025-08-30T19:40:45.456-0300][0.012s][info][gc,init] Concurrent Workers: 2" />
+        <event timestamp="15"
+            detail="[2025-08-30T19:40:45.456-0300][0.012s][info][gc,init] Concurrent Refinement Workers: 8" />
+        <event timestamp="16"
+            detail="[2025-08-30T19:40:45.456-0300][0.012s][info][gc,init] Periodic GC: Disabled" />
+        <event timestamp="17"
+            detail="[2025-08-30T19:40:45.464-0300][0.019s][info][gc,metaspace] CDS archive(s) mapped at: [0x000001fe94000000-0x000001fe94c90000-0x000001fe94c90000), size 13172736, SharedBaseAddress: 0x000001fe94000000, ArchiveRelocationMode: 1." />
+        <event timestamp="18"
+            detail="[2025-08-30T19:40:45.464-0300][0.019s][info][gc,metaspace] Compressed class space mapped at: 0x000001fe95000000-0x000001fed5000000, reserved size: 1073741824" />
+        <event timestamp="19"
+            detail="[2025-08-30T19:40:45.464-0300][0.019s][info][gc,metaspace] Narrow klass base: 0x000001fe94000000, Narrow klass shift: 0, Narrow klass range: 0x100000000" />
+        <event timestamp="20"
+            detail="[2025-08-30T19:40:45.519-0300][0.075s][info][gc,heap,exit] Heap" />
+        <event timestamp="21"
+            detail="[2025-08-30T19:40:45.520-0300][0.075s][info][gc,heap,exit]  garbage-first heap   total 129024K, used 2048K [0x0000000082800000, 0x0000000100000000)" />
+        <event timestamp="22"
+            detail="[2025-08-30T19:40:45.520-0300][0.075s][info][gc,heap,exit]   region size 1024K, 2 young (2048K), 0 survivors (0K)" />
+        <event timestamp="23"
+            detail="[2025-08-30T19:40:45.520-0300][0.075s][info][gc,heap,exit]  Metaspace       used 409K, committed 576K, reserved 1114112K" />
+        <event timestamp="24"
+            detail="[2025-08-30T19:40:45.520-0300][0.075s][info][gc,heap,exit]   class space    used 31K, committed 128K, reserved 1048576K" />
+    </garbageCollection>
+    <summary>
+        <executionTime>?</executionTime>
+        <totalGCEvents>25</totalGCEvents>
+        <totalMethods>95</totalMethods>
+        <totalErrors>1</totalErrors>
+        <timestamp>2025-08-30T19:40:45.544143</timestamp>
+    </summary>
+</applicationAnalysis>
