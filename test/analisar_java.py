@@ -21,6 +21,7 @@ def analisar_java(filepath: str):
     """Lê o arquivo Java e envia para análise no modelo"""
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"Arquivo não encontrado: {filepath}")
+    
 
     with open(filepath, "r", encoding="utf-8") as f:
         conteudo = f.read()
