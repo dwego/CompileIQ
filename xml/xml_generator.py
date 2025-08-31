@@ -68,10 +68,10 @@ def run_java_analysis(java_file, class_name):
     ET.SubElement(summary, "totalErrors").text = str(len(root.find("errors")))
     ET.SubElement(summary, "timestamp").text = datetime.now().isoformat()
 
-    with open("analysis.xml", "wb") as f:
+    with open("log-java.txt", "wb") as f:
         ET.ElementTree(root).write(f, encoding="utf-8", xml_declaration=True)
 
-    return "analysis.xml"
+    return "log-java.txt"
 
 
 def parse_jit_log(stdout_text):
