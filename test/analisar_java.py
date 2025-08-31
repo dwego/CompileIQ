@@ -31,46 +31,6 @@ def ask_ollama(prompt: str, model: str = "gemma3:4b"):
     output = remover_ansi(output)
     return output
 
-def medir_tempo_java(filepath: str):
-    """
-    Compila e executa um arquivo Java, retornando tempos e saída.
-    """
-    if not os.path.exists(filepath):
-        raise FileNotFoundError(f"Arquivo não encontrado: {filepath}")
-
-    # Compilação
-    inicio_compilacao = time.time()
-    compilar = subprocess.run(
-        ["javac", filepath],
-        capture_output=True,
-        text=True,
-        encoding="utf-8"
-    )
-    fim_compilacao = time.time()
-    tempo_compilacao = fim_compilacao - inicio_compilacao
-
-    if compilar.returncode != 0:
-        return {"erro": f"Erro de compilação:\n{compilar.stderr}"}
-
-    # Execução
-    classe = os.path.splitext(os.path.basename(filepath))[0]
-    inicio_execucao = time.time()
-    executar = subprocess.run(
-        ["java", classe],
-        capture_output=True,
-        text=True,
-        encoding="utf-8"
-    )
-    fim_execucao = time.time()
-    tempo_execucao = fim_execucao - inicio_execucao
-
-    return {
-        "tempo_compilacao": tempo_compilacao,
-        "tempo_execucao": tempo_execucao,
-        "saida": executar.stdout,
-        "erros": executar.stderr
-    }
-
 def analisar_java(filepath: str):
     """
     Analisa o código Java com Gemma via Ollama, incluindo tempos de execução.
