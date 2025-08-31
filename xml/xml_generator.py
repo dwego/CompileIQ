@@ -1,6 +1,7 @@
 import subprocess
 import os
 import tempfile
+import time
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import re
@@ -19,6 +20,7 @@ def run_java_analysis(java_file, class_name):
         os.remove(gc_log)
 
     # 2. Rodar com GC + PrintCompilation
+    inicio_compilacao = time.time()
     run_proc = subprocess.run([
         "java",
         f"-Xlog:gc*:file={gc_log}:tags,uptime,time,level",
@@ -26,6 +28,8 @@ def run_java_analysis(java_file, class_name):
         "-XX:+PrintCompilation",
         class_name
     ], capture_output=True, text=True)
+    fim_compilacao = time.time()
+    tempo_compilacao = fim_compilacao - inicio_compilacao
 
     stdout_text = run_proc.stdout
     stderr_text = run_proc.stderr
@@ -58,7 +62,7 @@ def run_java_analysis(java_file, class_name):
 
     # Summary
     summary = ET.SubElement(root, "summary")
-    ET.SubElement(summary, "executionTime").text = "?"
+    ET.SubElement(summary, "executionTime").text = str(tempo_compilacao)
     ET.SubElement(summary, "totalGCEvents").text = str(len(gc_events))
     ET.SubElement(summary, "totalMethods").text = str(len(root.find("jitLog")))
     ET.SubElement(summary, "totalErrors").text = str(len(root.find("errors")))
