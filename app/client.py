@@ -5,12 +5,11 @@ import re
 
 
 def remover_ansi(texto):
-    """Remove caracteres de controle ANSI, incluindo spinners"""
     ansi_escape = re.compile(r"\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])")
     return ansi_escape.sub("", texto)
 
 
-def interpreter_agent(prompt: str, model: str = "gemma3:4b", timeout: int = 300):
+def client(prompt: str, model: str = "gemma3:4b", timeout: int = 300):
     try:
         print("[INFO] Iniciando execução do modelo Ollama...")
         start_time = time.time()
@@ -43,7 +42,7 @@ def interpreter_agent(prompt: str, model: str = "gemma3:4b", timeout: int = 300)
         return None
 
 
-def analisar_java(log_java_filepath: str, java_filepath: str):
+def interpreter_agent(log_java_filepath: str, java_filepath: str):
     if not os.path.exists(java_filepath):
         raise FileNotFoundError(f"Arquivo não encontrado: {java_filepath}")
     if not os.path.exists(log_java_filepath):
@@ -57,7 +56,6 @@ def analisar_java(log_java_filepath: str, java_filepath: str):
     with open(log_java_filepath, "r", encoding="utf-8") as f:
         conteudo_log_xml = f.read()
 
-    print("[INFO] Montando prompt para IA...")
     prompt = f"""
         Você é um especialista em Java.
         Analise o seguinte código e explique seu funcionamento,
@@ -73,8 +71,9 @@ def analisar_java(log_java_filepath: str, java_filepath: str):
         {conteudo_log_xml}
     """
 
-    print("[INFO] Enviando prompt para o modelo...")
-    resposta = interpreter_agent(prompt, model="gemma3:4b", timeout=600)  # 10 min de timeout
+    resposta = client(
+        prompt, model="gemma3:4b", timeout=600
+    )  # 10 min de timeout
 
     if resposta is None:
         print("[ERRO] A análise não pôde ser concluída.")
@@ -89,16 +88,8 @@ if __name__ == "__main__":
     arquivo_log_java_xml = r"C:/Users/qchac/Documents/CompileIQ/infos/log-java.txt"
 
     print("[INFO] Iniciando análise do código Java...")
-    resultado = analisar_java(arquivo_log_java_xml, arquivo_java)
+    resultado = interpreter_agent(arquivo_log_java_xml, arquivo_java)
 
     if resultado:
         print("\n--- Análise do Código ---\n")
         print(resultado)
-
-if __name__ == "__main__":
-    # Raw string para caminhos Windows
-    arquivo_java = r"C:\Users\qchac\Documents\CompileIQ\test\Test02.java"
-    arquivo_log_java_xml = r"C:\Users\qchac\Documents\CompileIQ\test\log-java.txt"
-    resultado = analisar_java(arquivo_log_java_xml, arquivo_java)
-    print("\n--- Análise do Código ---\n")
-    print(resultado)

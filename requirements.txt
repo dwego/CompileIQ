@@ -1,2 +1,5 @@
 faiss-cpu
 pandas
+langchain
+langchain-ollama
+lanchain-chroma
