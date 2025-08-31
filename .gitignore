@@ -1,1 +1,8 @@
+# XML
 ./xml/analysis.xml
+
+# Environment
+.env
+.venv
+
+
