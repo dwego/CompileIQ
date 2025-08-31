@@ -5,8 +5,7 @@ import time
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import re
-
-
+import sys
 
 
 def run_java_analysis(java_file, class_name):
@@ -59,7 +58,7 @@ def run_java_analysis(java_file, class_name):
     ET.SubElement(root, "threadsAtivas").text = str(threads)
 
     # Salvar XML final
-    xml_path = r"C:\Users\qchac\Documents\CompileIQ\infos\metrics-java.xml"
+    xml_path = r"C:\Users\qchac\Documents\CompileIQ\infos\\" + class_name + "-metrics.xml"
     with open(xml_path, "wb") as f:
         ET.ElementTree(root).write(f, encoding="utf-8", xml_declaration=True)
 
@@ -116,5 +115,6 @@ def parse_errors(stderr_text):
 
 
 if __name__ == "__main__":
-    xml_file = run_java_analysis(r"C:\Users\qchac\Documents\CompileIQ\test\Test01.java", "Test01.java")
-    print(f"XML gerado: {xml_file}")
+    
+    xml_file = run_java_analysis(sys.argv[1], sys.argv[2])
+    print(xml_file)
